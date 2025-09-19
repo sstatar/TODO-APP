@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo-listByGuitah</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="main">
+                <div id="main-content">
+                    <!--AddTaskBar-->
+                    <form id="addTaskForm">
+                        <input
+                            type="text"
+                            id="todo-input"
+                            placeholder="Add your task ..."
+                            required
+                        />
+                        <button id="submit-button" type="submit">Add</button>
+                    </form>
+
+                    <!--ShowNextTask-->
+                    <div class="nextTask-section" -></div>
+
+                    <!--AllTask-->
+                    <div class="allTask-section">
+                        <h3>All Task</h3>
+                        <div class="task-list"></div>
+                    </div>
+
+                    <!--DoneTask-->
+                    <div class="doneTask-section"></div>
+                </div>
+            </div>
+
+            <div id="secondary"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* =======================
+   Global Reset + Defaults
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    /* max-width: 400px; */
+    /* margin: 0 auto; */
+    /* padding: 16px; */
+    background: #595551;
+    color: #161347;
+    font-weight: 600;
+}
+
+#container {
+    display: flex;
+    background-color: #fff;
+    width: 90vw;
+    min-height: 80vh;
+    max-width: 1075px;
+    margin: 4rem auto;
+    border-radius: 20px;
+}
+
+#main {
+    background: #f8f3e9;
+    width: 80%;
+    border-radius: 20px 0 0 20px;
+    padding: 2rem;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 412px;
+    margin: 0 auto;
+    /* padding: 0 1.5rem; เว้นซ้ายขวาเล็กน้อย */
+    padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+/* addtask */
+#addTaskForm {
+    position: relative;
+    /* background-color: #161347; */
+    width: 100%;
+    max-width: 357px;
+}
+
+#todo-input {
+    max-height: 38px;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    padding-right: 4rem;
+    border: none;
+}
+
+#submit-button {
+    position: absolute;
+    right: 0;
+    border-radius: 15px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #d57f60;
+    color: #fff;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #ca6b49;
+}
+
+/* Next task */
+.nextTask-section {
+    width: 100%;
+}
+
+.next-task {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: aqua; */
+    gap: 10px;
+    align-items: end;
+}
+
+#nextTask-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    /* flex: auto; */
+    width: 100%;
+    /* height: 100%; */
+    max-width: 357px;
+    max-height: 178px;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+#task-picture {
+    width: 100%;
+    /* max-width: 357px; */
+    height: 100%;
+    /* max-height: 178px; */
+    border-radius: 10px;
+}
+
+.task-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 355.78px;
+    max-height: 56.57px;
+}
+
+#nextTask-name {
+    position: absolute;
+    bottom: 0;
+    background-color: #d57f60;
+    color: #fff;
+}
+
+#allTask-name {
+    border: 0.13rem solid;
+    color: #161347;
+    
+}
+
+.task-content { 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-height: 49.5px;
+    /* background-color: aqua;  */
+    gap: 10px;
+    /* max-height: 56px; */
+}
+
+/* .task-item {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+} */
+
+.cover-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.delete-btn {
+    width: 100%;
+    height: 100%;
+    max-width: 19.5px;
+    max-height: 24px;   
+}
+
+#nextTask-deleteBtn {
+    margin: 0 8.6px 8.6px 0;
+    
+}
+
+#allTask-deleteBtn {
+    margin: 8.6px 8.6px 0 0;
+}
+
+.success-btn {
+    /* box-sizing: content-box; */
+    width: 100%;
+    /* height: 100%; */
+    max-width: 20px;
+    max-height: 20px;
+    border-radius: 100%;
+    border: 0.14rem solid;
+    background-color: transparent;
+    border-color: #161347;
+}
+
+#nextTask-checkBtn {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+/* all task section */
+.allTask-section {
+    width: 100%;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* secondary-zone */
+#secondary {
+    background: #fff;
+    width: 40%;
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* done task */
+.doneList-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.doneTask-content {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    max-height: 49.5px;
+    /* background-color: aqua;  */
+    gap: 10px;
+    /* max-height: 56px; */ 
+}
+
+.doneTask-element {
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 355.78px;
+    max-height: 40px;
+    color: #161347;
+    border: 0.13rem solid;
+    /* background-color: #595551; */
+}
+
+#donTask-deleteBtn {
+    margin: 8.6px 0 0 0;
+}
+
+@media (max-width: 820px) {
+    #secondary {
+        display: none;
+    }
+
+    #main {
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+}
+
+@media (max-width: 440px) {
+    
+}
