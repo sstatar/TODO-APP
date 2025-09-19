@@ -37,7 +37,7 @@ function displayNextTasks() {
 
         const taskPicture = document.createElement("img");
         taskPicture.id = "task-picture";
-        taskPicture.src = "activityPicture.png";
+        taskPicture.src = "../images/activityPicture.png";
 
         taskElement.textContent = taskList[0].name;
 
@@ -128,7 +128,7 @@ function createSuccessButton(index) {
 
 function createDeleteButton(index, fromList) {
     const button = document.createElement("img");
-    button.src = "binPicture.png";
+    button.src = "../images/binPicture.png";
     button.className = "delete-btn";
     button.addEventListener("click", function () {
         fromList.splice(index, 1);
