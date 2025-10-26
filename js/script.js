@@ -37,7 +37,7 @@ function displayNextTasks() {
 
         const taskPicture = document.createElement("img");
         taskPicture.id = "task-picture";
-        taskPicture.src = "../images/activityPicture.png";
+        taskPicture.src = "https://github.com/sstatar/TODO-APP/blob/main/images/activityPicture.png?raw=true";
 
         taskElement.textContent = taskList[0].name;
 
@@ -128,7 +128,7 @@ function createSuccessButton(index) {
 
 function createDeleteButton(index, fromList) {
     const button = document.createElement("img");
-    button.src = "../images/binPicture.png";
+    button.src = "https://github.com/sstatar/TODO-APP/blob/main/images/binPicture.png?raw=true";
     button.className = "delete-btn";
     button.addEventListener("click", function () {
         fromList.splice(index, 1);
